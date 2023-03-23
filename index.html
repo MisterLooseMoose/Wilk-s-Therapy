@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Wilk's Therapy</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--Title, logo, three buttons-->
+        <section id="banner">
+            <img src="images/logosmall.jpg" class="logo">
+            <div class="banner-text">
+                <h1>Wilk's Therapy<r>LLC</r></h1>
+                <p>Occupational Therapy Specialized in Pelvic Health<br><b>Andrea Wilkerson MOT, OTR/L</b></p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>About Me</a>
+                    <a href="https://www.google.com/maps/place/7+N+Detroit+St,+Kenton,+OH+43326/@40.647538,-83.611695,17z/data=!3m1!4b1!4m6!3m5!1s0x883ecd3c67e18c4d:0x7a356590508f188d!8m2!3d40.647538!4d-83.609501!16s%2Fg%2F11csn2bjyf" target="_blank"><span></span>Get Directions</a>
+                    <a href="#"><span></span>Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!--side menu-->
+        <div id="sideNav">
+            <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="https://www.google.com/maps/place/7+N+Detroit+St,+Kenton,+OH+43326/@40.647538,-83.611695,17z/data=!3m1!4b1!4m6!3m5!1s0x883ecd3c67e18c4d:0x7a356590508f188d!8m2!3d40.647538!4d-83.609501!16s%2Fg%2F11csn2bjyf" target="_blank">DIRECTIONS</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET ME</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        
+        <!--services-->
+        <section id="services">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>General OT services including an emphasis on post-partum recovery. The rest of this text is placeholder text until an actual writeup is ready. Please disregard everything you are reading because it does not matter. If you have made it this far you will have noticed that none of this is important or contributes to the website. For further information contact me with the information provided on this website.</h1>
+        </div>
+        </section>
+
+        <!--facebook button-->
+        <div class="facebookBtn">
+            <a href="https://www.facebook.com/profile.php?id=100089710004521" target="_blank"><img src="images/facebook.png" id="facebook"></a>
+        </div>
+        </section>
+
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-180px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-180px"){
+                    sideNav.style.right = "0";
+                    menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-180px";
+                menu.src = "images/menu.png";
+            }
+        }
+        </script>
+    </body>
+
+</html>
